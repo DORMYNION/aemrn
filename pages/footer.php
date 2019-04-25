@@ -7,87 +7,87 @@
 					<div class="clients-carousel owl-carousel owl-theme">
 						<div class="item">
 							<div class="img-box">
-								<img src="img/clients/1.gif" alt="">
+								<img src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/clients/1.gif" alt="">
 							</div>
 						</div>
 						<div class="item">
 							<div class="img-box">
-								<img src="img/clients/2.gif" alt="">
+								<img src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/clients/2.gif" alt="">
 							</div>
 						</div>
 						<div class="item">
 							<div class="img-box">
-								<img src="img/clients/3.gif" alt="">
+								<img src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/clients/3.gif" alt="">
 							</div>
 						</div>
 						<div class="item">
 							<div class="img-box">
-								<img src="img/clients/4.gif" alt="">
+								<img src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/clients/4.gif" alt="">
 							</div>
 						</div>
 						<div class="item">
 							<div class="img-box">
-								<img src="img/clients/5.gif" alt="">
+								<img src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/clients/5.gif" alt="">
 							</div>
 						</div>
 						<div class="item">
 							<div class="img-box">
-								<img src="img/clients/6.gif" alt="">
+								<img src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/clients/6.gif" alt="">
 							</div>
 						</div>
 						<div class="item">
 							<div class="img-box">
-								<img src="img/clients/7.gif" alt="">
+								<img src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/clients/7.gif" alt="">
 							</div>
 						</div>
 						<div class="item">
 							<div class="img-box">
-								<img src="img/clients/8.gif" alt="">
+								<img src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/clients/8.gif" alt="">
 							</div>
 						</div>
 						<div class="item">
 							<div class="img-box">
-								<img src="img/clients/9.gif" alt="">
+								<img src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/clients/9.gif" alt="">
 							</div>
 						</div>
 						<div class="item">
 							<div class="img-box">
-								<img src="img/clients/10.gif" alt="">
+								<img src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/clients/10.gif" alt="">
 							</div>
 						</div>
 						<div class="item">
 							<div class="img-box">
-								<img src="img/clients/11.jpg" alt="">
+								<img src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/clients/11.jpg" alt="">
 							</div>
 						</div>
 						<div class="item">
 							<div class="img-box">
-								<img src="img/clients/12.jpg" alt="">
+								<img src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/clients/12.jpg" alt="">
 							</div>
 						</div>
 						<div class="item">
 							<div class="img-box">
-								<img src="img/clients/13.jpg" alt="">
+								<img src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/clients/13.jpg" alt="">
 							</div>
 						</div>
 						<div class="item">
 							<div class="img-box">
-								<img src="img/clients/14.jpg" alt="">
+								<img src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/clients/14.jpg" alt="">
 							</div>
 						</div>
 						<div class="item">
 							<div class="img-box">
-								<img src="img/clients/15.jpg" alt="">
+								<img src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/clients/15.jpg" alt="">
 							</div>
 						</div>
 						<div class="item">
 							<div class="img-box">
-								<img src="img/clients/16.png" alt="">
+								<img src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/clients/16.png" alt="">
 							</div>
 						</div>
 						<div class="item">
 							<div class="img-box">
-								<img src="img/clients/17.png" alt="">
+								<img src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/clients/17.png" alt="">
 							</div>
 						</div>
 					</div>
@@ -102,7 +102,7 @@
 				<div class="col-md-3 col-sm-6">
 					<div class="footer-widget about-widget">
 						<a href="#">
-							<img src="img/resources/logo.png" alt="Awesome Image" width="300" height="75"/>
+							<img src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/resources/logo.png" alt="Awesome Image" width="300" height="75"/>
 						</a>
 						<ul class="contact">
 							<li><i class="fa fa-map-marker"></i> <span>Afro-European Medical and Research Network (AEMRN), Neuengasse 36, 3011 Bern, Switzerland.</span></li>
@@ -120,11 +120,15 @@
 					<div class="footer-widget quick-links">
 						<h3 class="title">External Links</h3>
 						<ul>
+							<li><a href="<?php echo RELATIVE_PATH_LIBRARY;?>/admin">admin</a></li>
 							<li><a href="https://webmail.cyon.ch/">Webmail</a></li>
 							<li><a href="https://login.secureserver.net/?app=wbe">Senlincs</a></li>
 							<li><a href="http://ezcollab.who.int/Community.aspx?c=5f18f53a-41d0-4d08-9115-5130837afe91">WHO/AEMRN Forum</a></li>
 							<li><a href="news.php">News</a></li>
 							<li><a href="contact.php">Contact</a></li>
+							<?php if($is_admin){?>
+							<li><a href="<?php echo RELATIVE_PATH_LIBRARY;?>/logout">logout</a></li>
+							<?php } ?>
 						</ul>
 					</div>
 				</div>
@@ -177,56 +181,56 @@
 
 
 	<!-- main jQuery -->
-	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="<?php echo RELATIVE_PATH_ASSET_JS;?>/jquery-1.11.1.min.js"></script>
 	<!-- bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
+	<script src="<?php echo RELATIVE_PATH_ASSET_JS;?>/bootstrap.min.js"></script>
 	<!-- bx slider -->
-	<script src="js/jquery.bxslider.min.js"></script>
+	<script src="<?php echo RELATIVE_PATH_ASSET_JS;?>/jquery.bxslider.min.js"></script>
 	<!-- owl carousel -->
-	<script src="js/owl.carousel.min.js"></script>
+	<script src="<?php echo RELATIVE_PATH_ASSET_JS;?>/owl.carousel.min.js"></script>
 	<!-- validate -->
-	<script src="js/jquery-parallax.js"></script>
+	<script src="<?php echo RELATIVE_PATH_ASSET_JS;?>/jquery-parallax.js"></script>
 	<!-- validate -->
-	<script src="js/validate.js"></script>
+	<script src="<?php echo RELATIVE_PATH_ASSET_JS;?>/validate.js"></script>
 	<!-- mixit up -->
-	<script src="js/jquery.mixitup.min.js"></script>
+	<script src="<?php echo RELATIVE_PATH_ASSET_JS;?>/jquery.mixitup.min.js"></script>
 	<!-- fancybox -->
-	<script src="js/jquery.fancybox.pack.js"></script>
+	<script src="<?php echo RELATIVE_PATH_ASSET_JS;?>/jquery.fancybox.pack.js"></script>
 	<!-- easing -->
-	<script src="js/jquery.easing.min.js"></script>
+	<script src="<?php echo RELATIVE_PATH_ASSET_JS;?>/jquery.easing.min.js"></script>
 	<!-- circle progress -->
-	<script src="js/circle-progress.js"></script>
+	<script src="<?php echo RELATIVE_PATH_ASSET_JS;?>/circle-progress.js"></script>
 	<!-- appear js -->
-	<script src="js/jquery.appear.js"></script>
+	<script src="<?php echo RELATIVE_PATH_ASSET_JS;?>/jquery.appear.js"></script>
 	<!-- count to -->
-	<script src="js/jquery.countTo.js"></script>
+	<script src="<?php echo RELATIVE_PATH_ASSET_JS;?>/jquery.countTo.js"></script>
 	<!-- gmap helper -->
 	<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
 	<!-- gmap main script -->
-	<script src="js/gmap.js"></script>
+	<script src="<?php echo RELATIVE_PATH_ASSET_JS;?>/gmap.js"></script>
 
 	<!-- isotope script -->
-	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="<?php echo RELATIVE_PATH_ASSET_JS;?>/isotope.pkgd.min.js"></script>
 	<!-- jQuery ui js -->
-	<script src="js/jquery-ui-1.11.4/jquery-ui.js"></script>
+	<script src="<?php echo RELATIVE_PATH_ASSET_JS;?>/jquery-ui-1.11.4/jquery-ui.js"></script>
 
 	<!-- revolution scripts -->
 
-	<script src="revolution/js/jquery.themepunch.tools.min.js"></script>
-	<script src="revolution/js/jquery.themepunch.revolution.min.js"></script>
-	<script type="text/javascript" src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
-	<script type="text/javascript" src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-	<script type="text/javascript" src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-	<script type="text/javascript" src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-	<script type="text/javascript" src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
-	<script type="text/javascript" src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-	<script type="text/javascript" src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-	<script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-	<script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+	<script src="<?php echo RELATIVE_PATH_LIBRARY;?>/revolution/js/jquery.themepunch.tools.min.js"></script>
+	<script src="<?php echo RELATIVE_PATH_LIBRARY;?>/revolution/js/jquery.themepunch.revolution.min.js"></script>
+	<script type="text/javascript" src="<?php echo RELATIVE_PATH_LIBRARY;?>/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+	<script type="text/javascript" src="<?php echo RELATIVE_PATH_LIBRARY;?>/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+	<script type="text/javascript" src="<?php echo RELATIVE_PATH_LIBRARY;?>/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+	<script type="text/javascript" src="<?php echo RELATIVE_PATH_LIBRARY;?>/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+	<script type="text/javascript" src="<?php echo RELATIVE_PATH_LIBRARY;?>/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+	<script type="text/javascript" src="<?php echo RELATIVE_PATH_LIBRARY;?>/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+	<script type="text/javascript" src="<?php echo RELATIVE_PATH_LIBRARY;?>/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+	<script type="text/javascript" src="<?php echo RELATIVE_PATH_LIBRARY;?>/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+	<script type="text/javascript" src="<?php echo RELATIVE_PATH_LIBRARY;?>/revolution/js/extensions/revolution.extension.video.min.js"></script>
 
 
 	<!-- thm custom script -->
-	<script src="js/custom.js"></script>
+	<script src="<?php echo RELATIVE_PATH_ASSET_JS;?>/custom.js"></script>
 
 	<script>
 		$('preamble').readmore({ speed: 75, lessLink: '<a href="#">Read less</a>' });

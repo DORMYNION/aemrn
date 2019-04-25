@@ -1,14 +1,21 @@
+<?php
+	include LOCAL_PATH_CONFIG.'/system_header.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>AEMRN Home || Together we can make it</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="<?php if(isset($page_description)){echo $page_description;} else {echo $settings_page_description;}?>"/>
+
+	<title><?php if(isset($page_title)){echo $page_title;} else {echo $settings_page_title;}?> | Together we can make it</title>
 	<!-- responsive meta -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- master stylesheet -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="<?php echo RELATIVE_PATH_ASSET_CSS;?>/style.css">
 	<!-- responsive stylesheet -->
-	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="<?php echo RELATIVE_PATH_ASSET_CSS;?>/responsive.css">
 </head>
 
 <body>
@@ -37,7 +44,7 @@
 		<div class="container">
 			<div class="logo pull-left">
 				<a href="index.php">
-					<img src="img/resources/logo.png" alt="AEMRN Logo" style="height: 75px; width: 150px;"/>
+					<img src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/resources/logo.png" alt="AEMRN Logo" style="height: 75px; width: 150px;"/>
 				</a>
 			</div>
 			<div class="header-right-info pull-right clearfix">
@@ -48,11 +55,27 @@
 				</div>
 				<div class="single-header-info">
 					<div class="content">
-						<img src="img/resources/index.gif" alt="">
+						<img src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/resources/index.gif" alt="">
 					</div>
 				</div>
 			</div>
 		</div>
 	</header> <!-- /.header -->
+
+	<?php if(isset($_REQUEST['message'])){?>
+				<?php
+		$url_message_type = $_REQUEST['message_type'];
+		if($url_message_type!="success" and $url_message_type!="error"){
+			$url_message_type = "";
+		}
+		//
+		$url_message = urldecode($_GET['message']);
+		$url_message = htmlentities($_GET['message'],ENT_QUOTES,"UTF-8");
+		?>
+					<div class="message_<?php echo $url_message_type;?>">
+					<?php echo $url_message;?>
+					</div>
+	<?php }?>
+
 
 <?php include 'menu.php'; ?>

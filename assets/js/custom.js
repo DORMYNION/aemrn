@@ -451,10 +451,19 @@ function videoCarousel() {
 });
 }
 
+function menu() {
+	// var url = window.location.href;
+	// var myMenuLink = ('#menu a');
+	// myMenuLink.filter(function() {
+	// 	return this.href == url;
+	// }).addClass('active');
+}
+
 // Dom Ready Function
 jQuery(document).on('ready', function () {
 	(function ($) {
 		// add your functions
+		menu()
 		revolutionSliderActiver();
 		galleryMasonaryLayout();
 		accrodion();

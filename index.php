@@ -1,11 +1,13 @@
-<?php include 'part/header.php'; ?>
+<?php $app = require __DIR__.'/bootstrap.php';?>
+<?php $page_title = "Home"; ?>
+<?php include LOCAL_PATH_PAGES.'/header.php'; ?>
 
-<?php include 'part/banner.php'; ?>
+<?php include LOCAL_PATH_PAGES.'/banner.php'; ?>
 
 <section class="call-to-action">
 	<div class="container-fluid">
 		<div class="clearfix">
-			<div class="call-to-action-corner col-md-4" style="background-image: url(img/call-to-action/left-box-bg.jpg);">
+			<div class="call-to-action-corner col-md-4" style="background-image: url(<?php echo RELATIVE_PATH_ASSET_IMG;?>/call-to-action/left-box-bg.jpg);">
 				<div class="single-call-to-action">
 					<div class="icon-box">
 						<div class="inner-box">
@@ -19,7 +21,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="call-to-action-center col-md-4" style="background-image: url(img/call-to-action/center-box-bg.jpg);">
+			<div class="call-to-action-center col-md-4" style="background-image: url(<?php echo RELATIVE_PATH_ASSET_IMG;?>/call-to-action/center-box-bg.jpg);">
 				<div class="single-call-to-action">
 					<div class="icon-box">
 						<div class="inner-box">
@@ -33,7 +35,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="call-to-action-corner col-md-4" style="background-image: url(img/call-to-action/right-box-bg.jpg);">
+			<div class="call-to-action-corner col-md-4" style="background-image: url(<?php echo RELATIVE_PATH_ASSET_IMG;?>/call-to-action/right-box-bg.jpg);">
 				<div class="single-call-to-action">
 					<div class="icon-box">
 						<div class="inner-box">
@@ -79,20 +81,7 @@
 					<div class="row">
 						<div class="col-sm-6">
 							<div class="thumb">
-								<img class="full-width" src="img/causes/provector.JPG" alt="">
-								<!-- <div class="causes-progress">
-								<div class="progress-item">
-								<div class="progress" data-value="85">
-								<div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-								<div class="value-holder"><span class="value"></span>%</div>
-							</div>
-						</div>
-					</div>
-					<ul class="list-inline">
-					<li>Raised: $7890</li>
-					<li class="text-thm pull-right">Goal: $9300</li>
-				</ul>
-			</div> -->
+								<img class="full-width" src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/causes/provector.JPG" alt="">
 		</div>
 	</div>
 	<div class="col-sm-6">
@@ -117,7 +106,7 @@
 			<div class="col-sm-12 col-md-4 col-lg-4">
 				<div class="causes sm-col5-center">
 					<div class="thumb">
-						<img class="full-width" alt="" src="img/causes/liberia.jpg">
+						<img class="full-width" alt="" src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/causes/liberia.jpg">
 					</div>
 					<div class="causes-details clearfix">
 						<h4 class="title"><a href="#">Afro-European Medical and Research Network Clinic, Monrovia, Liberia</a></h4>
@@ -136,7 +125,7 @@
 			<div class="col-sm-12 col-md-4 col-lg-4">
 				<div class="causes sm-col5-center">
 					<div class="thumb">
-						<img class="full-width" alt="" src="img/causes/hospital.JPG">
+						<img class="full-width" alt="" src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/causes/hospital.JPG">
 					</div>
 					<div class="causes-details clearfix">
 						<h4 class="title"><a href="#">Kitale Community Hospital, Kitale, Kenya </a></h4>
@@ -156,7 +145,7 @@
 			<div class="col-sm-12 col-md-4 col-lg-4">
 				<div class="causes sm-col5-center">
 					<div class="thumb">
-						<img class="full-width" alt="" src="img/causes/school.jpg">
+						<img class="full-width" alt="" src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/causes/school.jpg">
 					</div>
 					<div class="causes-details clearfix">
 						<h4 class="title"><a href="#">African Children School Project, Bekoko, Cameroon </a></h4>
@@ -279,26 +268,6 @@
 	</section>
 
 
-	<!-- <section class="overlay-white sec-padding parallax-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 promote-project text-center">
-					<h3>Save Children From Hunger</h3>
-					<div class="sec-title colored text-center">
-						<span class="decor">
-							<span class="inner"></span>
-						</span>
-					</div>
-					<h2>Became a part of the world lorem ipsum</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quaerat atque, dolore. Amido ipsum dolor sit amet, consectetur adipisicing elit. Numquam quaerat atque, dolore.Lorem ipsum dolor sit amet, consectetur.</p>
-					<a href="#" class="thm-btn">Donate Now</a>
-					<a href="#" class="thm-btn inverse">Read More</a>
-				</div>
-			</div>
-		</div>
-	</section>
-	 -->
-
 	<section class="gallery-section pb_2">
 		<div class="auto-container">
 			<div class="sec-title text-center">
@@ -312,553 +281,69 @@
 			<!--Image Box-->
 			<div class="image-box">
 				<div class="inner-box">
-					<figure class="image"><a href="img/gallery/s1.jpg" class="lightbox-image"><img src="img/gallery/s1.jpg" alt=""></a></figure>
-					<a href="img/gallery/s1.jpg" class="lightbox-image btn-zoom" title="Image Title Here"><span class="icon fa fa-dot-circle-o"></span></a>
+					<figure class="image"><a href="<?php echo RELATIVE_PATH_ASSET_IMG;?>/gallery/s1.jpg" class="lightbox-image"><img src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/gallery/s1.jpg" alt=""></a></figure>
+					<a href="<?php echo RELATIVE_PATH_ASSET_IMG;?>/gallery/s1.jpg" class="lightbox-image btn-zoom" title="Image Title Here"><span class="icon fa fa-dot-circle-o"></span></a>
 				</div>
 			</div>
 
 			<!--Image Box-->
 			<div class="image-box">
 				<div class="inner-box">
-					<figure class="image"><a href="img/gallery/s2.jpg" class="lightbox-image"><img src="img/gallery/s2.jpg" alt=""></a></figure>
-					<a href="img/gallery/s2.jpg" class="lightbox-image btn-zoom" title="Image Title Here"><span class="icon fa fa-dot-circle-o"></span></a>
+					<figure class="image"><a href="<?php echo RELATIVE_PATH_ASSET_IMG;?>/gallery/s2.jpg" class="lightbox-image"><img src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/gallery/s2.jpg" alt=""></a></figure>
+					<a href="<?php echo RELATIVE_PATH_ASSET_IMG;?>/gallery/s2.jpg" class="lightbox-image btn-zoom" title="Image Title Here"><span class="icon fa fa-dot-circle-o"></span></a>
 				</div>
 			</div>
 
 			<!--Image Box-->
 			<div class="image-box">
 				<div class="inner-box">
-					<figure class="image"><a href="img/gallery/s3.jpg" class="lightbox-image"><img src="img/gallery/s3.jpg" alt=""></a></figure>
-					<a href="img/gallery/s3.jpg" class="lightbox-image btn-zoom" title="Image Title Here"><span class="icon fa fa-dot-circle-o"></span></a>
+					<figure class="image"><a href="<?php echo RELATIVE_PATH_ASSET_IMG;?>/gallery/s3.jpg" class="lightbox-image"><img src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/gallery/s3.jpg" alt=""></a></figure>
+					<a href="<?php echo RELATIVE_PATH_ASSET_IMG;?>/gallery/s3.jpg" class="lightbox-image btn-zoom" title="Image Title Here"><span class="icon fa fa-dot-circle-o"></span></a>
 				</div>
 			</div>
 
 			<!--Image Box-->
 			<div class="image-box">
 				<div class="inner-box">
-					<figure class="image"><a href="img/gallery/s4.jpg" class="lightbox-image"><img src="img/gallery/s4.jpg" alt=""></a></figure>
-					<a href="img/gallery/s4.jpg" class="lightbox-image btn-zoom" title="Image Title Here"><span class="icon fa fa-dot-circle-o"></span></a>
+					<figure class="image"><a href="<?php echo RELATIVE_PATH_ASSET_IMG;?>/gallery/s4.jpg" class="lightbox-image"><img src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/gallery/s4.jpg" alt=""></a></figure>
+					<a href="<?php echo RELATIVE_PATH_ASSET_IMG;?>/gallery/s4.jpg" class="lightbox-image btn-zoom" title="Image Title Here"><span class="icon fa fa-dot-circle-o"></span></a>
 				</div>
 			</div>
 
 			<!--Image Box-->
 			<div class="image-box">
 				<div class="inner-box">
-					<figure class="image"><a href="img/gallery/s5.jpg" class="lightbox-image"><img src="img/gallery/s5.jpg" alt=""></a></figure>
-					<a href="img/gallery/s5.jpg" class="lightbox-image btn-zoom" title="Image Title Here"><span class="icon fa fa-dot-circle-o"></span></a>
+					<figure class="image"><a href="<?php echo RELATIVE_PATH_ASSET_IMG;?>/gallery/s5.jpg" class="lightbox-image"><img src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/gallery/s5.jpg" alt=""></a></figure>
+					<a href="<?php echo RELATIVE_PATH_ASSET_IMG;?>/gallery/s5.jpg" class="lightbox-image btn-zoom" title="Image Title Here"><span class="icon fa fa-dot-circle-o"></span></a>
 				</div>
 			</div>
 
 			<!--Image Box-->
 			<div class="image-box">
 				<div class="inner-box">
-					<figure class="image"><a href="img/gallery/s6.jpg" class="lightbox-image"><img src="img/gallery/s6.jpg" alt=""></a></figure>
-					<a href="img/gallery/s6.jpg" class="lightbox-image btn-zoom" title="Image Title Here"><span class="icon fa fa-dot-circle-o"></span></a>
+					<figure class="image"><a href="<?php echo RELATIVE_PATH_ASSET_IMG;?>/gallery/s6.jpg" class="lightbox-image"><img src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/gallery/s6.jpg" alt=""></a></figure>
+					<a href="<?php echo RELATIVE_PATH_ASSET_IMG;?>/gallery/s6.jpg" class="lightbox-image btn-zoom" title="Image Title Here"><span class="icon fa fa-dot-circle-o"></span></a>
 				</div>
 			</div>
 
 			<!--Image Box-->
 			<div class="image-box">
 				<div class="inner-box">
-					<figure class="image"><a href="img/gallery/s7.jpg" class="lightbox-image"><img src="img/gallery/s7.jpg" alt=""></a></figure>
-					<a href="img/gallery/s7.jpg" class="lightbox-image btn-zoom" title="Image Title Here"><span class="icon fa fa-dot-circle-o"></span></a>
+					<figure class="image"><a href="<?php echo RELATIVE_PATH_ASSET_IMG;?>/gallery/s7.jpg" class="lightbox-image"><img src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/gallery/s7.jpg" alt=""></a></figure>
+					<a href="<?php echo RELATIVE_PATH_ASSET_IMG;?>/gallery/s7.jpg" class="lightbox-image btn-zoom" title="Image Title Here"><span class="icon fa fa-dot-circle-o"></span></a>
 				</div>
 			</div>
 
 			<!--Image Box-->
 			<div class="image-box">
 				<div class="inner-box">
-					<figure class="image"><a href="img/gallery/s8.jpg" class="lightbox-image"><img src="img/gallery/s8.jpg" alt=""></a></figure>
-					<a href="img/gallery/s8.jpg" class="lightbox-image btn-zoom" title="Image Title Here"><span class="icon fa fa-dot-circle-o"></span></a>
+					<figure class="image"><a href="<?php echo RELATIVE_PATH_ASSET_IMG;?>/gallery/s8.jpg" class="lightbox-image"><img src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/gallery/s8.jpg" alt=""></a></figure>
+					<a href="<?php echo RELATIVE_PATH_ASSET_IMG;?>/gallery/s8.jpg" class="lightbox-image btn-zoom" title="Image Title Here"><span class="icon fa fa-dot-circle-o"></span></a>
 				</div>
 			</div>
 
 		</div>
 	</section>
-
-
-	<!-- <section class="footer-call-to-action">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-9 sm-text-center">
-					<h3>Here will be any kind lorem ipsum heading</h3>
-					<p>There are many variations of passages of Lorem Ipsum available, but the majority have lorem</p>
-				</div>
-				<div class="col-md-3 text-right sm-text-center">
-					<a href="#" class="thm-btn inverse m-tops15">View Full Gallery</a>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-	<section class="home-serivce sec-padding">
-		<div class="container">
-			<div class="sec-title text-center">
-				<h2>Our Mission</h2>
-				<p>Lorem ipsum is a dummy text it will use for subtitle here</p>
-				<span class="decor"><span class="inner"></span></span>
-			</div>
-			<div class="row">
-				<div class="col-md-4 col-sm-6">
-					<div class="single-service-home">
-						<div class="icon-box">
-							<div class="inner-box">
-								<i class="flaticon-gesture-1"></i>
-							</div>
-						</div>
-						<div class="content">
-							<h3>Charity For Education</h3>
-							<p>There are many variations of lorem <br>passagei of Lorem Ipsum available <br> but the majority have </p>
-							<a href="service-details.html">Read More</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="single-service-home">
-						<div class="icon-box">
-							<div class="inner-box">
-								<i class="flaticon-people-1"></i>
-							</div>
-						</div>
-						<div class="content">
-							<h3>Feed for hungry child</h3>
-							<p>There are many variations of lorem <br>passagei of Lorem Ipsum available <br> but the majority have </p>
-							<a href="service-details.html">Read More</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="single-service-home">
-						<div class="icon-box">
-							<div class="inner-box">
-								<i class="flaticon-hand"></i>
-							</div>
-						</div>
-						<div class="content">
-							<h3>Home for homeless</h3>
-							<p>There are many variations of lorem <br>passagei of Lorem Ipsum available <br> but the majority have </p>
-							<a href="service-details.html">Read More</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="single-service-home">
-						<div class="icon-box">
-							<div class="inner-box">
-								<i class="flaticon-people-1"></i>
-							</div>
-						</div>
-						<div class="content">
-							<h3>Feed for hungry child</h3>
-							<p>There are many variations of lorem <br>passagei of Lorem Ipsum available <br> but the majority have </p>
-							<a href="service-details.html">Read More</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="single-service-home">
-						<div class="icon-box">
-							<div class="inner-box">
-								<i class="flaticon-hand"></i>
-							</div>
-						</div>
-						<div class="content">
-							<h3>Home for homeless</h3>
-							<p>There are many variations of lorem <br>passagei of Lorem Ipsum available <br> but the majority have </p>
-							<a href="service-details.html">Read More</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="single-service-home">
-						<div class="icon-box">
-							<div class="inner-box">
-								<i class="flaticon-gesture-1"></i>
-							</div>
-						</div>
-						<div class="content">
-							<h3>Charity For Education</h3>
-							<p>There are many variations of lorem <br>passagei of Lorem Ipsum available <br> but the majority have </p>
-							<a href="service-details.html">Read More</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-	<section class="fact-counter-wrapper sec-padding parallax-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6 col-md-12 md-text-center">
-					<h2>We are served since <b>35 years</b> <br>to helpless people with trust and <br>we are happy</h2>
-					<a href="#" class="thm-btn inverse m-btmm40">Be a part of us</a>
-				</div>
-				<div class="col-lg-6 col-md-12 md-text-center">
-					<div class="single-fact">
-						<div class="icon-box">
-							<i class="flaticon-shapes-2"></i>
-						</div>
-						<span class="timer" data-from="10" data-to="365" data-speed="5000" data-refresh-interval="50">365</span>
-						<p>Total Awards</p>
-					</div>
-					<div class="single-fact">
-						<div class="icon-box">
-							<i class="flaticon-people-3"></i>
-						</div>
-						<span class="timer" data-from="10" data-to="2200" data-speed="5000" data-refresh-interval="50">155</span>
-						<p>Total Volunteer</p>
-					</div>
-					<div class="single-fact">
-						<div class="icon-box">
-							<i class="flaticon-hands"></i>
-						</div>
-						<span class="timer" data-from="10" data-to="155" data-speed="5000" data-refresh-interval="50">2200</span>
-						<p>Total Projects</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	 -->
-	<!--
-	<section class="sec-padding meet-Volunteer">
-	<div class="container">
-	<div class="row">
-	<div class="col-xs-10">
-	<div class="sec-title text-left">
-	<h2>Meet Our Volunteers</h2>
-	<p>Lorem ipsum is a dummy text it will use for subtitle here</p>
-	<span class="decor"><span class="inner"></span></span>
-</div>
-</div>
-</div>
-<div class="clearfix">
-<div class="team-carousel owl-carousel owl-theme">
-<div class="item">
-<div class="single-team-member">
-<div class="img-box">
-<img src="img/team/1.jpg" alt="">
-<div class="overlay">
-<div class="box">
-<div class="content">
-<ul>
-<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<h3>Muhibbur Rashid</h3>
-<span>Businessman</span>
-<p>Lorem ipsum dolor sit amet, sea dolor essent nostrud no, pro no vidit aterum mediocritatem.</p>
-<a href="volunteer-profile.html" class="thm-btn">View Profile</a>
-</div>
-</div>
-<div class="item">
-<div class="single-team-member">
-<div class="img-box">
-<img src="img/team/2.jpg" alt="">
-<div class="overlay">
-<div class="box">
-<div class="content">
-<ul>
-<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<h3>Rashed Kabir</h3>
-<span>Businessman</span>
-<p>Lorem ipsum dolor sit amet, sea dolor essent nostrud no, pro no vidit aterum mediocritatem.</p>
-<a href="volunteer-profile.html" class="thm-btn">View Profile</a>
-</div>
-</div>
-<div class="item">
-<div class="single-team-member">
-<div class="img-box">
-<img src="img/team/3.jpg" alt="">
-<div class="overlay">
-<div class="box">
-<div class="content">
-<ul>
-<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<h3>Jannatul Ferdous</h3>
-<span>Businessman</span>
-<p>Lorem ipsum dolor sit amet, sea dolor essent nostrud no, pro no vidit aterum mediocritatem.</p>
-<a href="volunteer-profile.html" class="thm-btn">View Profile</a>
-</div>
-</div>
-<div class="item">
-<div class="single-team-member">
-<div class="img-box">
-<img src="img/team/4.jpg" alt="">
-<div class="overlay">
-<div class="box">
-<div class="content">
-<ul>
-<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<h3>Ashikur Rahman</h3>
-<span>Businessman</span>
-<p>Lorem ipsum dolor sit amet, sea dolor essent nostrud no, pro no vidit aterum mediocritatem.</p>
-<a href="volunteer-profile.html" class="thm-btn">View Profile</a>
-</div>
-</div>
-<div class="item">
-<div class="single-team-member">
-<div class="img-box">
-<img src="img/team/1.jpg" alt="">
-<div class="overlay">
-<div class="box">
-<div class="content">
-<ul>
-<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<h3>Muhibbur Rashid</h3>
-<span>Businessman</span>
-<p>Lorem ipsum dolor sit amet, sea dolor essent nostrud no, pro no vidit aterum mediocritatem.</p>
-<a href="volunteer-profile.html" class="thm-btn">View Profile</a>
-</div>
-</div>
-<div class="item">
-<div class="single-team-member">
-<div class="img-box">
-<img src="img/team/2.jpg" alt="">
-<div class="overlay">
-<div class="box">
-<div class="content">
-<ul>
-<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<h3>Rashed Kabir</h3>
-<span>Businessman</span>
-<p>Lorem ipsum dolor sit amet, sea dolor essent nostrud no, pro no vidit aterum mediocritatem.</p>
-<a href="volunteer-profile.html" class="thm-btn">View Profile</a>
-</div>
-</div>
-<div class="item">
-<div class="single-team-member">
-<div class="img-box">
-<img src="img/team/3.jpg" alt="">
-<div class="overlay">
-<div class="box">
-<div class="content">
-<ul>
-<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<h3>Jannatul Ferdous</h3>
-<span>Businessman</span>
-<p>Lorem ipsum dolor sit amet, sea dolor essent nostrud no, pro no vidit aterum mediocritatem.</p>
-<a href="volunteer-profile.html" class="thm-btn">View Profile</a>
-</div>
-</div>
-<div class="item">
-<div class="single-team-member">
-<div class="img-box">
-<img src="img/team/4.jpg" alt="">
-<div class="overlay">
-<div class="box">
-<div class="content">
-<ul>
-<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<h3>Ashikur Rahman</h3>
-<span>Businessman</span>
-<p>Lorem ipsum dolor sit amet, sea dolor essent nostrud no, pro no vidit aterum mediocritatem.</p>
-<a href="volunteer-profile.html" class="thm-btn">View Profile</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-
-<section class="sec-padding testimonials-wrapper parallax-section">
-<div class="container">
-<div class="sec-title colored text-center">
-<h2>Testimonials</h2>
-<span class="decor">
-<span class="inner"></span>
-</span>
-</div>
-<div class="testimonaials-carousel owl-carousel owl-theme">
-<div class="item">
-<div class="single-testimonaials">
-<div class="qoute-box">
-<i class="qoute">“</i>
-</div>
-<p>Lorem ipsum dolor sit amet, per justo iracundia an. Inani tation tritani mea ut. Mundi scriptorem</p>
-<h3>Roberto Carlos</h3>
-<span>Patient of Asthama</span>
-</div>
-</div>
-<div class="item">
-<div class="single-testimonaials">
-<div class="qoute-box">
-<i class="qoute">“</i>
-</div>
-<p>Lorem ipsum dolor sit amet, per justo iracundia an. Inani tation tritani mea ut. Mundi scriptorem</p>
-<h3>Roberto Carlos</h3>
-<span>Patient of Asthama</span>
-</div>
-</div>
-<div class="item">
-<div class="single-testimonaials">
-<div class="qoute-box">
-<i class="qoute">“</i>
-</div>
-<p>Lorem ipsum dolor sit amet, per justo iracundia an. Inani tation tritani mea ut. Mundi scriptorem</p>
-<h3>Roberto Carlos</h3>
-<span>Patient of Asthama</span>
-</div>
-</div>
-<div class="item">
-<div class="single-testimonaials">
-<div class="qoute-box">
-<i class="qoute">“</i>
-</div>
-<p>Lorem ipsum dolor sit amet, per justo iracundia an. Inani tation tritani mea ut. Mundi scriptorem</p>
-<h3>Roberto Carlos</h3>
-<span>Patient of Asthama</span>
-</div>
-</div>
-<div class="item">
-<div class="single-testimonaials">
-<div class="qoute-box">
-<i class="qoute">“</i>
-</div>
-<p>Lorem ipsum dolor sit amet, per justo iracundia an. Inani tation tritani mea ut. Mundi scriptorem</p>
-<h3>Roberto Carlos</h3>
-<span>Patient of Asthama</span>
-</div>
-</div>
-<div class="item">
-<div class="single-testimonaials">
-<div class="qoute-box">
-<i class="qoute">“</i>
-</div>
-<p>Lorem ipsum dolor sit amet, per justo iracundia an. Inani tation tritani mea ut. Mundi scriptorem</p>
-<h3>Roberto Carlos</h3>
-<span>Patient of Asthama</span>
-</div>
-</div>
-<div class="item">
-<div class="single-testimonaials">
-<div class="qoute-box">
-<i class="qoute">“</i>
-</div>
-<p>Lorem ipsum dolor sit amet, per justo iracundia an. Inani tation tritani mea ut. Mundi scriptorem</p>
-<h3>Roberto Carlos</h3>
-<span>Patient of Asthama</span>
-</div>
-</div>
-<div class="item">
-<div class="single-testimonaials">
-<div class="qoute-box">
-<i class="qoute">“</i>
-</div>
-<p>Lorem ipsum dolor sit amet, per justo iracundia an. Inani tation tritani mea ut. Mundi scriptorem</p>
-<h3>Roberto Carlos</h3>
-<span>Patient of Asthama</span>
-</div>
-</div>
-<div class="item">
-<div class="single-testimonaials">
-<div class="qoute-box">
-<i class="qoute">“</i>
-</div>
-<p>Lorem ipsum dolor sit amet, per justo iracundia an. Inani tation tritani mea ut. Mundi scriptorem</p>
-<h3>Roberto Carlos</h3>
-<span>Patient of Asthama</span>
-</div>
-</div>
-<div class="item">
-<div class="single-testimonaials">
-<div class="qoute-box">
-<i class="qoute">“</i>
-</div>
-<p>Lorem ipsum dolor sit amet, per justo iracundia an. Inani tation tritani mea ut. Mundi scriptorem</p>
-<h3>Roberto Carlos</h3>
-<span>Patient of Asthama</span>
-</div>
-</div>
-<div class="item">
-<div class="single-testimonaials">
-<div class="qoute-box">
-<i class="qoute">“</i>
-</div>
-<p>Lorem ipsum dolor sit amet, per justo iracundia an. Inani tation tritani mea ut. Mundi scriptorem</p>
-<h3>Roberto Carlos</h3>
-<span>Patient of Asthama</span>
-</div>
-</div>
-<div class="item">
-<div class="single-testimonaials">
-<div class="qoute-box">
-<i class="qoute">“</i>
-</div>
-<p>Lorem ipsum dolor sit amet, per justo iracundia an. Inani tation tritani mea ut. Mundi scriptorem</p>
-<h3>Roberto Carlos</h3>
-<span>Patient of Asthama</span>
-</div>
-</div>
-</div>
-</div>
-</section> -->
 
 
 <section class="blog-home sec-padding">
@@ -874,7 +359,7 @@
 			<div class="col-md-4 col-sm-12 sm-col5-center m-btms40">
 				<div class="single-blog-post">
 					<div class="img-box">
-						<img class="full-width" src="img/blog/1.jpg" alt="">
+						<img class="full-width" src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/blog/1.jpg" alt="">
 						<div class="overlay">
 							<div class="box">
 								<div class="content">
@@ -897,7 +382,7 @@
 			<div class="col-md-4 col-sm-12 sm-col5-center m-btms40">
 				<div class="single-blog-post">
 					<div class="img-box">
-						<img class="full-width" src="img/blog/2.jpg" alt="">
+						<img class="full-width" src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/blog/2.jpg" alt="">
 						<div class="overlay">
 							<div class="box">
 								<div class="content">
@@ -920,7 +405,7 @@
 			<div class="col-md-4 col-sm-12 sm-col5-center m-btms40">
 				<div class="single-blog-post">
 					<div class="img-box">
-						<img class="full-width" src="img/blog/3.jpg" alt="">
+						<img class="full-width" src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/blog/3.jpg" alt="">
 						<div class="overlay">
 							<div class="box">
 								<div class="content">
@@ -944,4 +429,6 @@
 	</div>
 </section>
 
-<?php include 'part/footer.php'; ?>
+<?php include LOCAL_PATH_PAGES.'/callout.php'; ?>
+
+<?php include LOCAL_PATH_PAGES.'/footer.php'; ?>

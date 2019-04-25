@@ -3,7 +3,7 @@
 		<div class="container">
 			<div class="navigation pull-left">
 				<div class="nav-header">
-					<ul>
+					<ul id="menu">
             <li><a href="index.php">Home</a></li>
 						<li class="dropdown">
 							<a href="about.php">About Us</a>
@@ -172,7 +172,7 @@
                           <div class="form-portlet">
                             <h3>Online Payment Information</h3>
 
-                              <div class="payment-option-logo"><img alt="" src="img/resources/payment-logos.png" class="img-responsive"></div>
+                              <div class="payment-option-logo"><img alt="" src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/resources/payment-logos.png" class="img-responsive"></div>
                               <br>
                           </div>
 

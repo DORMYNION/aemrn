@@ -1,5 +1,6 @@
-<?php include 'part/header.php'; ?>
-
+<?php $app = require __DIR__.'/bootstrap.php';?>
+<?php $page_title = "Contact Us"; ?>
+<?php include LOCAL_PATH_PAGES.'/header.php'; ?>
 
 	<section class="inner-header">
 		<div class="container">
@@ -81,4 +82,6 @@
 		</div>
 	</section>
 
-<?php include 'part/footer.php'; ?>
+<?php include LOCAL_PATH_PAGES.'/callout.php'; ?>
+
+<?php include LOCAL_PATH_PAGES.'/footer.php'; ?>

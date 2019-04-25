@@ -1,4 +1,6 @@
-<?php include 'part/header.php'; ?>
+<?php $app = require __DIR__.'/bootstrap.php';?>
+<?php $page_title = "Team"; ?>
+<?php include LOCAL_PATH_PAGES.'/header.php'; ?>
 
 
 	<section class="inner-header">
@@ -24,7 +26,7 @@
 				<div class="col-md-3">
 					<div class="single-team-member mb_60">
 						<div class="img-box">
-							<img class="full-width" src="img/team/Haenni.jpg" alt="">
+							<img class="full-width" src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/team/Haenni.jpg" alt="">
 							<div class="overlay">
 								<div class="box">
 									<div class="content">
@@ -47,7 +49,7 @@
 				<div class="col-md-3">
 					<div class="single-team-member mb_60">
 						<div class="img-box">
-							<img class="full-width" src="img/team/Charles.jpg" alt="">
+							<img class="full-width" src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/team/Charles.jpg" alt="">
 							<div class="overlay">
 								<div class="box">
 									<div class="content">
@@ -70,7 +72,7 @@
 				<div class="col-md-3">
 					<div class="single-team-member mb_60">
 						<div class="img-box">
-							<img class="full-width" src="img/team/Desmond.jpg" alt="">
+							<img class="full-width" src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/team/Desmond.jpg" alt="">
 							<div class="overlay">
 								<div class="box">
 									<div class="content">
@@ -93,7 +95,7 @@
 				<div class="col-md-3">
 					<div class="single-team-member mb_60">
 						<div class="img-box">
-							<img class="full-width" src="img/team/Josephine.jpg" alt="">
+							<img class="full-width" src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/team/Josephine.jpg" alt="">
 							<div class="overlay">
 								<div class="box">
 									<div class="content">
@@ -117,7 +119,7 @@
 				<div class="col-md-3">
 					<div class="single-team-member mb_60">
 						<div class="img-box">
-							<img class="full-width" src="img/team/Comfort.jpg" alt="">
+							<img class="full-width" src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/team/Comfort.jpg" alt="">
 							<div class="overlay">
 								<div class="box">
 									<div class="content">
@@ -140,7 +142,7 @@
 				<div class="col-md-3">
 					<div class="single-team-member mb_60">
 						<div class="img-box">
-							<img class="full-width" src="img/team/Doreen.jpg" alt="">
+							<img class="full-width" src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/team/Doreen.jpg" alt="">
 							<div class="overlay">
 								<div class="box">
 									<div class="content">
@@ -163,7 +165,7 @@
 				<div class="col-md-3">
 					<div class="single-team-member mb_60">
 						<div class="img-box">
-							<img class="full-width" src="img/team/Macauley.jpg" alt="">
+							<img class="full-width" src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/team/Macauley.jpg" alt="">
 							<div class="overlay">
 								<div class="box">
 									<div class="content">
@@ -186,7 +188,7 @@
 				<div class="col-md-3">
 					<div class="single-team-member mb_60">
 						<div class="img-box">
-							<img class="full-width" src="img/team/Johnson.jpg" alt="">
+							<img class="full-width" src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/team/Johnson.jpg" alt="">
 							<div class="overlay">
 								<div class="box">
 									<div class="content">
@@ -210,7 +212,7 @@
 				<div class="col-md-3">
 					<div class="single-team-member mb_60">
 						<div class="img-box">
-							<img class="full-width" src="img/team/Dan.jpg" alt="">
+							<img class="full-width" src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/team/Dan.jpg" alt="">
 							<div class="overlay">
 								<div class="box">
 									<div class="content">
@@ -233,7 +235,7 @@
 				<div class="col-md-3">
 					<div class="single-team-member mb_60">
 						<div class="img-box">
-							<img class="full-width" src="img/team/Thomas.jpg" alt="">
+							<img class="full-width" src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/team/Thomas.jpg" alt="">
 							<div class="overlay">
 								<div class="box">
 									<div class="content">
@@ -256,7 +258,7 @@
 				<div class="col-md-3">
 					<div class="single-team-member mb_60">
 						<div class="img-box">
-							<img class="full-width" src="img/team/Myer.jpg" alt="">
+							<img class="full-width" src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/team/Myer.jpg" alt="">
 							<div class="overlay">
 								<div class="box">
 									<div class="content">
@@ -279,7 +281,7 @@
 				<div class="col-md-3">
 					<div class="single-team-member mb_60">
 						<div class="img-box">
-							<img class="full-width" src="img/team/Kasembeli.jpg" alt="">
+							<img class="full-width" src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/team/Kasembeli.jpg" alt="">
 							<div class="overlay">
 								<div class="box">
 									<div class="content">
@@ -303,7 +305,7 @@
 				<div class="col-md-3">
 					<div class="single-team-member mb_60">
 						<div class="img-box">
-							<img class="full-width" src="img/team/Yassa.jpg" alt="">
+							<img class="full-width" src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/team/Yassa.jpg" alt="">
 							<div class="overlay">
 								<div class="box">
 									<div class="content">
@@ -326,7 +328,7 @@
 				<div class="col-md-3">
 					<div class="single-team-member mb_60">
 						<div class="img-box">
-							<img class="full-width" src="img/team/Foday.jpg" alt="">
+							<img class="full-width" src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/team/Foday.jpg" alt="">
 							<div class="overlay">
 								<div class="box">
 									<div class="content">
@@ -349,7 +351,7 @@
 				<div class="col-md-3">
 					<div class="single-team-member mb_60">
 						<div class="img-box">
-							<img class="full-width" src="img/team/Edward.jpg" alt="">
+							<img class="full-width" src="<?php echo RELATIVE_PATH_ASSET_IMG;?>/team/Edward.jpg" alt="">
 							<div class="overlay">
 								<div class="box">
 									<div class="content">
@@ -373,25 +375,6 @@
 		</div>
 	</section>
 
+<?php include LOCAL_PATH_PAGES.'/callout.php'; ?>
 
-	<section class="overlay-white sec-padding parallax-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 promote-project text-center">
-					<h3>Save Children From Hunger</h3>
-					<div class="sec-title colored text-center">
-						<span class="decor">
-							<span class="inner"></span>
-						</span>
-					</div>
-					<h2>Became a part of the world lorem ipsum</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quaerat atque, dolore. Amido ipsum dolor sit amet, consectetur adipisicing elit. Numquam quaerat atque, dolore.Lorem ipsum dolor sit amet, consectetur.</p>
-					<a href="#" class="thm-btn">Donate Now</a>
-                    <a href="#" class="thm-btn inverse">Read More</a>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-<?php include 'part/footer.php'; ?>
+<?php include LOCAL_PATH_PAGES.'/footer.php'; ?>
